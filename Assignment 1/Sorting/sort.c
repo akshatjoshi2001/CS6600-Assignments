@@ -86,7 +86,7 @@ void mergeSortHelper(long int* array, int start,int end) {
         return;
     int middle = start+((end-start)>>1);
 
-    printf("%d %d", start, end);
+    
 
     // recursively sort sub-arrays
     mergeSortHelper(array, start, middle);

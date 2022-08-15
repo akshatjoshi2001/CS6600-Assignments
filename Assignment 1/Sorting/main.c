@@ -4,6 +4,7 @@
 #include "sort.c"
 
 #define SEED 5
+#define DEBUG 0
 
 void fillArray(long int *array, int size) {
 
@@ -51,6 +52,12 @@ int main(int argc,char* argv[]) {
         fprintf(stderr, "Unknown sort method %s \n", argv[1]);
         return -1;
     }
+
+    short int output_enable = 1;
+
+    if(argc >= 4 && strcmp(argv[3],"disable_output") == 0) {
+        output_enable = 0;
+    }
     
 
     int size = atoi(argv[2]);   
@@ -58,15 +65,25 @@ int main(int argc,char* argv[]) {
 
     fillArray(array, size);
 
-    printf("Before Sorting\n");
-    showArray(array, size);
+    if(output_enable == 1) {
+        printf("Before Sorting\n");
+        showArray(array, size);
+    }
+   
+    
+   
 
 
-    sort_function(array,size);    
+    sort_function(array,size);
 
-    printf("After Sorting\n");
-    showArray(array, size);
+    if(output_enable == 1) {
+        printf("After Sorting\n");
+        showArray(array, size);
+    }
+    
 
+    
+  
     
 
 
