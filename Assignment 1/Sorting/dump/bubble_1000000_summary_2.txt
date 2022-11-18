@@ -4,3 +4,23 @@
 ==73== Command: ./main.o bubble 1000000 disable_output
 ==73== 
 --73-- warning: L3 cache found, using its data for the LL simulation.
+==73== 
+==73== Process terminating with default action of signal 15 (SIGTERM)
+==73==    at 0x10932D: bubbleSort (in /mnt/d/Courses/CS6600/Assignment 1/Sorting/main.o)
+==73==    by 0x109DD0: main (in /mnt/d/Courses/CS6600/Assignment 1/Sorting/main.o)
+==73== 
+==73== I   refs:      21,221,903,474,372
+==73== I1  misses:                 1,012
+==73== LLi misses:                 1,011
+==73== I1  miss rate:               0.00%
+==73== LLi miss rate:               0.00%
+==73== 
+==73== D   refs:      11,043,694,820,755  (9,100,473,966,844 rd   + 1,943,220,853,911 wr)
+==73== D1  misses:        82,539,433,490  (   82,538,651,346 rd   +           782,144 wr)
+==73== LLd misses:        82,539,432,897  (   82,538,650,808 rd   +           782,089 wr)
+==73== D1  miss rate:                0.7% (              0.9%     +               0.0%  )
+==73== LLd miss rate:                0.7% (              0.9%     +               0.0%  )
+==73== 
+==73== LL refs:           82,539,434,502  (   82,538,652,358 rd   +           782,144 wr)
+==73== LL misses:         82,539,433,908  (   82,538,651,819 rd   +           782,089 wr)
+==73== LL miss rate:                 0.3% (              0.3%     +               0.0%  )

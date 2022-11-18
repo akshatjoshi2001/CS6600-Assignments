@@ -1,6 +1,0 @@
-==72== Cachegrind, a cache and branch-prediction profiler
-==72== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
-==72== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==72== Command: ./main.o bubble 750000 disable_output
-==72== 
---72-- warning: L3 cache found, using its data for the LL simulation.
